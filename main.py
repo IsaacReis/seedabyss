@@ -44,9 +44,9 @@ def fight(enemy):
     return True
 
 def main():
-    print("Welcome to the Dungeon!")
+    print("Welcome to the Abyss!")
     while True:
-        action = input("Explore dungeon? (yes/quit): ").strip().lower()
+        action = input("Explore abyss? (yes/quit): ").strip().lower()
         if action == "yes":
             enemy = generate_enemy()
             if fight(enemy):
@@ -56,7 +56,7 @@ def main():
                 items.append(loot)
                 save_json("items.json", items)
         elif action == "quit":
-            print("Exiting the dungeon. Goodbye!")
+            print("Exiting the abyss. Goodbye!")
             break
         else:
             print("Invalid input.")
