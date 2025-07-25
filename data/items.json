@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Cursed Amulet",
+    "effect": "Fire Resistance"
+  },
+  {
+    "name": "Glowing Blade",
+    "effect": "+5 Strength"
+  },
+  {
+    "name": "Glowing Amulet",
+    "effect": "+5 Strength"
+  },
+  {
+    "name": "Mystic Ring",
+    "effect": "+10 HP"
+  }
+]
