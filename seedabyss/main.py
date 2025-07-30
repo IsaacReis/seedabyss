@@ -2,7 +2,9 @@ import json
 import os
 import random
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from combat import fight
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
 def load_json(filename):
@@ -27,22 +29,6 @@ def generate_loot():
     name = generate_name(name_data)
     effect = random.choice(["+5 Strength", "+10 HP", "+3 Agility", "Fire Resistance"])
     return {"name": name, "effect": effect}
-
-def fight(enemy):
-    print(f"A wild {enemy['name']} appears with {enemy['hp']} HP!")
-    while enemy["hp"] > 0:
-        cmd = input("Command (attack/run): ").strip().lower()
-        if cmd == "attack":
-            dmg = random.randint(5, 15)
-            enemy["hp"] -= dmg
-            print(f"You hit the {enemy['name']} for {dmg} damage. Remaining HP: {max(enemy['hp'], 0)}")
-        elif cmd == "run":
-            print("You fled the battle!")
-            return False
-        else:
-            print("Unknown command.")
-    print(f"You defeated the {enemy['name']}!")
-    return True
 
 def main():
     print("Welcome to the Abyss!")
