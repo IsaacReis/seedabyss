@@ -2,7 +2,8 @@ import json
 import os
 import random
 
-DATA_DIR = "data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
 def load_json(filename):
     with open(os.path.join(DATA_DIR, filename), 'r') as f:

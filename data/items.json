@@ -14,5 +14,9 @@
   {
     "name": "Mystic Ring",
     "effect": "+10 HP"
+  },
+  {
+    "name": "Cursed Amulet",
+    "effect": "+5 Strength"
   }
 ]
