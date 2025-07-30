@@ -44,5 +44,3 @@ python main.py
 - Inventory management
 - More enemy types and item effects
 - Graphical interface or web version
-
-Made with 💀 by Isaac Adriano de Andrade Reis
