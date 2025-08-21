@@ -18,5 +18,25 @@
   {
     "name": "Cursed Amulet",
     "effect": "+5 Strength"
+  },
+  {
+    "name": "Glowing Tome",
+    "effect": "+5 Strength"
+  },
+  {
+    "name": "Glowing Blade",
+    "effect": "+5 Strength"
+  },
+  {
+    "name": "Ancient Tome",
+    "effect": "+5 Strength"
+  },
+  {
+    "name": "Glowing Tome",
+    "effect": "+10 HP"
+  },
+  {
+    "name": "Glowing Ring",
+    "effect": "Fire Resistance"
   }
 ]
